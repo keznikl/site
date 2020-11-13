@@ -1,0 +1,95 @@
+site:
+  title: Jaroslav Keznikl
+  description: Personal site of Jaroslav Keznikl
+  author: Jaroslav Keznikl
+header:
+  title: Jaroslav Keznikl
+  subtitle: >-
+    I am a Software Engineer, currently working as Sr. Software Engineer at H2O.ai,
+    ex Sr. SWE/SRE at Google Cloud AI, Distributed Systems Ph.D.,
+    advocate for reliable software, SRE/DevOps enthusiast,
+    husband, father, and (former) musician.
+  image: images/image.jpg
+  image_alt: Me playing guitar
+content:
+  title: Skills / Interests / Aspirations
+  subtitle: >-
+    Because I have never cared to publicize my professional life, there is very
+    little out on the Internet about it (except my Twitter feed, perhaps).
+    The following is a summary of some of the noteworthy things about me
+    (opinions are my own, not my employer's):
+  entries:
+  - title: H2O.ai In The Cloud
+    category: Work
+    link: https://h2o.ai
+    paragraphs:
+    - text: I work on H2O.ai products for the Cloud, getting the power of H2O.ai
+        machine learning to everone.
+    links:
+    - text: h2o.ai
+      link: https://h2o.ai
+    footer: 2020 - Present
+  - title: Reliable Google Cloud AI Products
+    category: Work
+    link: https://cloud.google.com/products/ai/
+    paragraphs:
+    - text: >-
+        I worked on making sure that Google Cloud AI services are reliable, secure,
+        and high performance, while maintaining high feature velocity.
+    links:
+      - link: https://cloud.google.com/products/ai/
+        text: cloud.google.com/products/ai/
+      - link: https://twitter.com/googlecloud
+        text: "@googlecloud"
+    footer: 2017 - 2020
+  - title: Site Reliability Engineering & DevOps
+    category: Professional Interests
+    link: https://landing.google.com/sre/
+    paragraphs:
+    - text: >-
+        I have developed a conviction for SRE/DevOps and I firmly believe reliability
+        is the most important feature; or as one of my colleagues puts it:
+    - text: <i>"Would you rather have Gmail&nbsp;2.0 or Gmail&nbsp;503?".</i>
+    footer: 2014 - Present
+  - title: Reliable Google Cloud SQL
+    category: Work
+    link: https://cloud.google.com/sql
+    paragraphs:
+    - text: >-
+        I worked on making sure that Google Cloud SQL is a reliable and
+        fast managed MySQL offering.
+    links:
+      - link: https://cloud.google.com/sql
+        text: cloud.google.com/sql
+      - link: https://twitter.com/googlecloud
+        text: "@googlecloud"
+    footer: 2014 - 2017
+  - title: Self-Adaptive Software Architectures
+    category: Research
+    link: https://scholar.google.com/citations?user=rH_zD8wAAAAJ&hl=en&oi=ao
+    paragraphs:
+    - text: >-
+        I have published <a href="https://scholar.google.com/citations?user=rH_zD8wAAAAJ&hl=en&oi=ao">a few publications</a>
+        on the topic of self-adapting peer-to-peer software component systems.
+    - text: >-
+        The research was mostly exploratory, but I gained good writing skills :-)
+    footer: 2010 - 2014
+  - title: I don't care about a&nbsp;particular technology
+    category: Professional Interests
+    link: ""
+    paragraphs:
+    - text: >-
+        I always try to use the right tool for the job. I've implemented apps in Java,
+        Python, Go, C++, C#, even Prolog; for PC or as services in the cloud; using various automation tools.
+    footer: Present
+  - title: Community
+    category: Aspirations
+    link: ""
+    paragraphs:
+    - text: >-
+        Historically, I have not done a&nbsp;stellar job at being part of the community
+        and I would like to change that.
+    - text: >-
+        Hit me up at <a href="https://twitter.com/jkeznikl" title="Twitter">@jkeznikl</a>
+        if you have ideas (especially if you're from Vysocina, Czechia).
+    footer: Present
