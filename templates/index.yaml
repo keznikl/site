@@ -5,8 +5,8 @@ site:
 header:
   title: Jaroslav Keznikl
   subtitle: >-
-    I am a Software Engineer, currently working as Sr. Software Engineer at H2O.ai,
-    ex Sr. SWE/SRE at Google Cloud AI, Distributed Systems Ph.D.,
+    I am a Software Engineer, currently working as Staff Software Engineer at Google,
+    ex Lead SWE at H2O.ai, ex Sr. SWE/SRE at Google Cloud AI, Distributed Systems Ph.D.,
     advocate for reliable software, SRE/DevOps enthusiast,
     husband, father, and (former) musician.
   image: images/image.jpg
@@ -19,16 +19,28 @@ content:
     The following is a summary of some of the noteworthy things about me
     (opinions are my own, not my employer's):
   entries:
+  - title: Reliable Google Cloud
+    category: Work
+    link: https://cloud.google.com
+    paragraphs:
+    - text: I am a Staff Software Engineer making sure Google Cloud has smooth incident response and 
+        customer communication processes.
+    links:
+      - link: https://cloud.google.com
+        text: cloud.google.com
+      - link: https://twitter.com/googlecloud
+        text: "@googlecloud"
+    footer: 2022 - Present
   - title: H2O.ai In The Cloud
     category: Work
     link: https://h2o.ai
     paragraphs:
-    - text: I work on H2O.ai products for the Cloud, getting the power of H2O.ai
-        machine learning to everone.
+    - text: I was a Lead Engineer for H2O.ai products in the Cloud, making the power of H2O.ai
+        machine learning available to everone.
     links:
     - text: h2o.ai
       link: https://h2o.ai
-    footer: 2020 - Present
+    footer: 2020 - 2022
   - title: Reliable Google Cloud AI Products
     category: Work
     link: https://cloud.google.com/products/ai/
