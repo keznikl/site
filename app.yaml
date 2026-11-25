@@ -1,11 +1,14 @@
-runtime: python27
-threadsafe: true
+runtime: python312
 
 handlers:
 - url: /
-  static_files: static/index.html
-  upload: static/index.html
+  static_files: dist/index.html
+  upload: dist/index.html
 
-- url: /(.*)
-  static_files: static/\1
-  upload: static/(.*)
+- url: /(.*\..+)$
+  static_files: dist/\1
+  upload: dist/(.*\..+)$
+
+- url: /.*
+  static_files: dist/index.html
+  upload: dist/index.html
