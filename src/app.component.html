@@ -1,0 +1,59 @@
+<div class="relative min-h-screen">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-sm border-b border-gray-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-center md:justify-end h-20">
+        <!-- Desktop Navigation -->
+        <nav class="flex items-center space-x-6">
+          @for (link of navLinks(); track link.name) {
+            @if (link.name === 'About Me') {
+              <a [href]="link.url" class="text-sm text-gray-900 font-medium tracking-wider uppercase">
+                {{ link.name }}
+              </a>
+            } @else {
+              <a [href]="link.url" [target]="link.isExternal ? '_blank' : '_self'" [rel]="link.isExternal ? 'noopener noreferrer' : ''" class="text-sm text-gray-500 hover:text-sky-700 transition-colors duration-300 font-medium tracking-wider uppercase">
+                {{ link.name }}
+              </a>
+            }
+          }
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Hero Section -->
+    <section class="flex flex-col items-center text-center pt-12 pb-4">
+      <h1 class="font-serif text-5xl md:text-6xl font-bold tracking-tight mb-4 bg-gradient-to-r from-sky-600 to-slate-700 text-transparent bg-clip-text">
+        Jaroslav Keznikl
+      </h1>
+      <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        I am a Software Engineer, currently working as Staff Software Engineer at Google, ex Lead SWE at H2O.ai, ex Sr. SWE/SRE at Google Cloud AI, Distributed Systems Ph.D., advocate for reliable software, SRE/DevOps enthusiast, husband, father, and (former) musician.
+      </p>
+      <div class="mt-8 flex justify-center space-x-6">
+        @for (social of socials(); track social.name) {
+          <a [href]="social.url" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-sky-700 transition-colors duration-300">
+            <span class="sr-only">{{ social.name }}</span>
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" [innerHTML]="social.safeSvg"></svg>
+          </a>
+        }
+      </div>
+    </section>
+
+    <!-- Image Section -->
+    <section class="pt-0 pb-24 md:pb-32" [style.opacity]="imageOpacity()">
+      <div class="relative rounded-xl shadow-xl shadow-gray-900/10 overflow-hidden">
+         <img class="w-full h-auto" src="images/image.jpg" alt="Jaroslav Keznikl playing guitar on stage">
+         <div class="absolute inset-0 bg-gradient-to-tr from-slate-400/40 to-slate-600/40"></div>
+      </div>
+    </section>
+
+    <main class="pb-24 md:pb-32">
+      <app-projects></app-projects>
+    </main>
+  </div>
+  
+  <app-footer></app-footer>
+</div>
